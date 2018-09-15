@@ -10,7 +10,6 @@ screen = pygame.display.set_mode((1280,720))
 title = pygame.image.load('Title.png')
 backgroundmenu = pygame.image.load('Menu.png')
 backgroundlab = pygame.image.load('lab.png')
-backgroundlab2 = pygame.image.load('lab2.png')
 
 botaojogar = pygame.image.load('JogarButton.png')
 botaojogarap = pygame.image.load('JogarButtonAp.png')
