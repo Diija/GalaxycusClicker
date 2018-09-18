@@ -33,6 +33,9 @@ botaofarmap = pygame.image.load('Livro2.png')
 
 botaocarregar = pygame.image.load('CarregarButton.png')
 botaocarregarap = pygame.image.load('CarregarButtonap.png')
+#botãoupgrades = pygame.image.load('.png')
+#dar load nas imagens dos upgrades
+#upgrade1_URSS = pygame.image.load('.png')
 
 sound = pygame.image.load('Sound.png')
 fonte = pygame.font.Font('Comicoro.ttf', 30)
@@ -143,6 +146,7 @@ def gameinit():
         screen.blit(backgroundlab, (0,0))
         screen.blit(botaofarm, (40,360))
         screen.blit(sound, (1180,50))
+        #screen.blit(botaoupgrade,(1180,70))
 ##        screen.blit(salvar, (1100,50))
         pesquisatexto = fonte.render(('Pesquisa: %s' % pesquisa), False, (0,0,0))
         screen.blit(pesquisatexto, (300,100))
@@ -180,6 +184,18 @@ def gameinit():
 ##                save[primeiravez] = shelfFile['primeiravez']
 ##                shelfFile.close()
 ##                print('Salvou')
+        #Botão upgrades
+        if 1180+70 > mouse[0] > 1180 and 70+70 > mouse[1] > 70:
+            if pygame.mouse.get_pressed()[0]:
+                while(True):
+                    screen.blit(menu_upgrades, (340,200))
+                     #dar blit nas imagens do upgrades
+                    pygame.display.flip()
+                    for event in pygame.event.get():
+                        if event.type == pygame.KEYDOWN:
+                            if event.key == pygame.K_ESCAPE:
+                                pygame.display.flip()               
+        
         #Musica
         if 1180+50 > mouse[0] > 1180 and 50+50 > mouse[1] > 50:
             if pygame.mouse.get_pressed()[0]:
