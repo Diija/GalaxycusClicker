@@ -192,6 +192,36 @@ def gameinit():
                      #dar blit nas imagens do upgrades
                     pygame.display.flip()
                     for event in pygame.event.get():
+##                      if posição event_1 > mouse[0] > posição event_1 and event_1 > mouse[1] > event_1:
+##                          if pygame.mouse.get_pressed()[0]:
+##                              modificador
+##                      if posição event_2 > mouse[0] > event_2 and event_2 > mouse[1] > event_2:
+##                          if pygame.mouse.get_pressed()[0]:
+##                              modificador
+##                      if event_3 > mouse[0] > event_3 and event_3 > mouse[1] > event_3:
+##                          if pygame.mouse.get_pressed()[0]:
+##                              modificador
+##                      if event_4 > mouse[0] > event_4 and event_4 > mouse[1] > event_4:
+##                          if pygame.mouse.get_pressed()[0]:
+##                              modificador
+#                      if event_5 > mouse[0] > event_5 and event_5 > mouse[1] > event_5:
+##                          if pygame.mouse.get_pressed()[0]:
+##                              modificador
+#                      if event_6 > mouse[0] > event_6 and event_6 > mouse[1] > event_6:
+##                          if pygame.mouse.get_pressed()[0]:
+##                              modificador
+#                      if event_7 > mouse[0] > event_7 and event_7 > mouse[1] > event_7:
+##                          if pygame.mouse.get_pressed()[0]:
+##                              modificador
+#                      if event_8 > mouse[0] > event_8 and event_8 > mouse[1] > event_8:
+##                          if pygame.mouse.get_pressed()[0]:
+##                              modificador
+#                      if event_9 > mouse[0] > event_9 and event_9 > mouse[1] > event_9:
+##                          if pygame.mouse.get_pressed()[0]:
+##                              modificador
+#                      if event_10 > mouse[0] > event_10 and event_10 > mouse[1] > event_10:
+##                          if pygame.mouse.get_pressed()[0]:
+##                              modificador
                         if event.type == pygame.KEYDOWN:
                             if event.key == pygame.K_ESCAPE:
                                 pygame.display.flip()               
