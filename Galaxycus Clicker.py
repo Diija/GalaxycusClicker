@@ -36,6 +36,7 @@ botaocarregarap = pygame.image.load('CarregarButtonap.png')
 #botãoupgrades = pygame.image.load('.png')
 #dar load nas imagens dos upgrades
 #upgrade1_URSS = pygame.image.load('.png')
+#upgrade1_URSS_selecionado = pygame.image.load('.png')
 
 sound = pygame.image.load('Sound.png')
 fonte = pygame.font.Font('Comicoro.ttf', 30)
@@ -195,6 +196,7 @@ def gameinit():
 ##                      if posição event_1 > mouse[0] > posição event_1 and event_1 > mouse[1] > event_1:
 ##                          if pygame.mouse.get_pressed()[0]:
 ##                              modificador
+##                              screen.blit(upgrade1_URSS_selecionado,(x,y))
 ##                      if posição event_2 > mouse[0] > event_2 and event_2 > mouse[1] > event_2:
 ##                          if pygame.mouse.get_pressed()[0]:
 ##                              modificador
